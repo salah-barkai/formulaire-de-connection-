@@ -1,0 +1,104 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    body {
+        background: white;
+        align-items: center;
+        display: flex;
+        margin: 5px;
+        color: black;
+    }
+    
+    #card {
+        background: white;
+        margin: 5px;
+        padding: 10px;
+        align-items: center;
+        color: black;
+        border: 1px solid skyblue;
+        box-shadow: 10px 5px 10px skyblue;
+        padding: 10px;
+        margin: 20px;
+        justify-content: center;
+        display: inline-block;
+        width: 500px;
+        height: 400px;
+        margin-left: 30%;
+        margin-top: 70px;
+    }
+    
+    #card h1 {
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        margin-left: 30%;
+    }
+    
+    input {
+        display: flex;
+        align-items: center;
+        padding: 18px;
+        margin: 28px;
+        width: 315px;
+        color: black;
+        font-size: 23px;
+        border: 1px solid skyblue;
+        margin-left: 10%;
+    }
+    
+    #btn {
+        width: 150px;
+        border: 1px solid skyblue;
+        background-color: white;
+        margin-left: 170px;
+        margin-top: 40px;
+        padding: 10px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    #btn:hover {
+        background-color: skyblue;
+        transition: 0.3 ease;
+    }
+    
+    .show-error #error {
+        display: block;
+        opacity: 1;
+    }
+    
+    #error {
+        display: none;
+        color: red;
+        font-style: italic;
+        font-size: 15px;
+        margin-left: 27%;
+    }
+    
+    .shake {
+        animation: shake 0.5s ease-in-out;
+    }
+    
+    @keyframes shake {
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: translateX(-5px);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+            transform: translateX(5px);
+        }
+    }
