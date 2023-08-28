@@ -6,7 +6,7 @@ var username = document.getElementById("username");
 
 passform.addEventListener('submit', (event) => {
     event.preventDefault();
-    var enterpasword = password.value;
+    var enterpassword = password.value;
     var entername = username.value;
 
     console.log(enterpassword);
@@ -19,7 +19,7 @@ passform.addEventListener('submit', (event) => {
         message_error.classList.add('show-error');
         password.classList.add('shake');
         setTimeout(() => {
-            passwordInput.classList.remove('shake');
+            password.classList.remove('shake');
         }, 500);
         // Effectuer d'autres actions si le mot de passe est incorrect
     }
